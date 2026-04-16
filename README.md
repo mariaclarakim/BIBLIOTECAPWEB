@@ -72,4 +72,4 @@ Autoras
 
 Maria Clara Braga
 
-Laís Alves (and?)
+Laís Alves 
