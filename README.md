@@ -1,69 +1,75 @@
-# Projeto Biblioteca - Programação Web
+Projeto Biblioteca - Programação Web
 
-Este projeto é um sistema de biblioteca desenvolvido para a disciplina de Programação Web. Ele permite visualizar livros e informações sobre autores de forma simples e organizada.
+Este é um projeto de sistema de biblioteca desenvolvido para a disciplina de Programação Web. O objetivo é gerenciar um acervo de livros e informações sobre autores, usando tecnologias modernas de desenvolvimento web.
 
-## Requisitos
+O que é necessário para rodar o projeto
 
-* .NET SDK 10.0
-* MySQL (Workbench ou outro)
-* Entity Framework Core Tools
+.NET SDK 10 
 
-## Tecnologias Utilizadas
+Servidor MySQl (workbench)
 
-* C# com ASP.NET Core MVC
-* MySQL
-* Bootstrap
-* Entity Framework Core
+Entity Framework Core Tools instalado no terminal
 
-## Como executar o projeto
+Tecnologias que usamos
 
-### 1. Clonar o repositório
+C# com ASP.NET Core MVC: Para a lógica e estrutura do site.
 
-```bash
-git clone https://github.com/mariaclarakim/BIBLIOTECAPWEB.git
+MySQL: Para salvar os dados dos livros e autores.
+
+Bootstrap: Para deixar o visual bonito e funcionando bem.
+
+Entity Framework: Para fazer a conexão entre o código e o banco de dados.
+
+Como configurar na sua máquina
+
+Baixar o projeto:
+Abra o terminal e use os comandos abaixo para clonar o repositório:
+
+git clone [https://github.com/mariaclarakim/BIBLIOTECAPWEB.git](https://github.com/mariaclarakim/BIBLIOTECAPWEB.git)
 cd BIBLIOTECAPWEB
-```
 
-### 2. Configurar o banco de dados
 
-No arquivo `appsettings.json`, coloque seu usuário e senha do MySQL:
+Configurar o banco de dados:
+No arquivo appsettings.json, você precisa colocar o seu usuário e a sua senha do MySQL:
 
-```json
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=biblioteca_db;User=seu_usuario;Password=sua_senha;"
 }
-```
 
-### 3. Criar o banco de dados
 
-Execute o comando:
+Criar as tabelas automaticamente:
+Rode este comando para o Entity Framework criar o banco e as tabelas no seu MySQL:
 
-```bash
 dotnet ef database update
-```
 
-### 4. Rodar o projeto
 
-```bash
+Rodar o site:
+
 dotnet run
-```
 
-## Organização do projeto
 
-* **Controllers**: controlam o funcionamento das páginas
-* **Models**: representam os dados (Livro e Autor)
-* **Views**: páginas que o usuário vê
-* **wwwroot**: arquivos de estilo e scripts
+Organização das pastas
 
-## Funcionalidades
+Controllers: Onde controlamos o que acontece em cada página.
 
-* Lista de livros na página inicial
-* Visualização de autores
-* Exibição das obras de cada autor
-* Layout adaptado para celular e computador
+Models: Onde definimos como são os objetos Livro e Autor.
 
-## Autoras
+Views: As páginas HTML do site que o usuário vê.
 
-* Maria Clara Braga
-* Laís Alves
+wwwroot: Pasta com os arquivos de estilo (CSS) e scripts.
 
+O que o sistema faz
+
+Lista todos os livros cadastrados na tela inicial.
+
+Permite clicar no nome de um autor para ver a biografia dele.
+
+Mostra quais livros pertencem a cada autor específico.
+
+Visual que se adapta a tablets e celulares.
+
+Autoras
+
+Maria Clara Braga
+
+Laís Alves (and?)
